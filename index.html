@@ -17,6 +17,31 @@
             },
         1000)
     </script>
+    <script type="text/javascript">
+        document.oncontextmenu = function () {
+            return false ;
+        }
+    </script>
+    <script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
+    <script type="text/javascript">
+        hotkeys('shift+w,shift+l,shift+t,shift+g', function (event, handler){
+        switch (handler.key) {
+            case 'shift+w': window.location.href = 'https://www.naudycastellanos.com' ;
+            break;
+            case 'shift+l': window.location.href = 'http://linkedin.com/in/naudycastellanos/' ;
+            break;
+            case 'shift+t': window.location.href = 'http://twitter.com/nucket' ;
+            break;
+            case 'shift+g': window.location.href = 'http://github.com/nucket' ;
+            break;
+            default: alert(event);
+        }
+    });
+    </script>
+    <script type="text/javascript">
+        const audio = new Audio ()
+        audio.src = "./Asset/sound1.mp3"
+    </script>
 </head>
 <body>
     <main class="animated">
@@ -25,7 +50,7 @@
             <h1>@nucket</h1>
         </header>
         <div id="sky"></div>
-        <ul>
+        <ul id="btn" onclick="audio.play();">
             <li>
                 <a href="https://www.naudycastellanos.com/" target="_blank">
                     <img src="./Asset/footprint.png" width="20" alt="Logo Website">
