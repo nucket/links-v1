@@ -1,6 +1,6 @@
 # links-v1 [NaudyCastellanos.com](https://www.naudycastellanos.com)
 
-Visual 
+Visual [![Links thumbnail](./Asset/thumb-min.png]
 
 ## Project structure
 
@@ -19,7 +19,7 @@ $PROJECT_ROOT
 - HTML - HyperText Markup language
 - CSS - Cascading Style Sheets
 - JavaScript - A scripting language for web pages
-- Naker.back - Animate Backgrounds 
+- Naker.back - Animate Backgrounds
 
 ___
 
