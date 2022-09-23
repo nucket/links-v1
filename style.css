@@ -40,11 +40,12 @@ header {
     align-items: center;
 }
 header > img {
+    z-index: 600;
     width: 8em;
     height: 8em;
     border-radius: 100%;
     border: 1px solid #fff;
-    box-shadow:rgb(28, 32, 93) 0px 2px 12px 0px !important;
+    box-shadow:rgba(172, 174, 176, 0.638) 0px 2px 12px 0px;
     backdrop-filter: blur(6px) saturate(260%) contrast(150%);
     -webkit-backdrop-filter: blur(5px) saturate(260%) contrast(250%);
 }
@@ -57,8 +58,8 @@ header > img {
     }
     ul > li {
         background-color: #fff7;
-        backdrop-filter: blur(6px) saturate(260%) contrast(150%) !important;
-        -webkit-backdrop-filter: blur(5px) saturate(260%) contrast(250%) !important;
+        backdrop-filter: blur(6px) saturate(260%) contrast(150%);
+        -webkit-backdrop-filter: blur(5px) saturate(260%) contrast(250%);
         border-radius:  10em;
         padding: 1em;
         margin: 1.4em 0;
@@ -74,8 +75,8 @@ header > h1 {
     color: #fff;
     padding: 0.3em 0.6em;
     border: 1px solid #fffa;
-    backdrop-filter: blur(15px) saturate(400%) contrast(300%) !important;
-    -webkit-backdrop-filter: blur(5px) saturate(260%) contrast(250%) !important;
+    backdrop-filter: blur(15px) saturate(400%) contrast(300%);
+    -webkit-backdrop-filter: blur(5px) saturate(260%) contrast(250%);
 }
 ul > li > a {
     display: flex;
@@ -86,6 +87,7 @@ ul > li > a {
 }
 a {
     color: black;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -95,3 +97,42 @@ a {
     left: 50%; 
     filter: drop-shadow(0px 2px 12px 0px rgb(#000a));
 } */
+.tooltip {
+    font-weight: normal;
+    color: rgb(28, 32, 93);
+    text-decoration: none;
+    position: relative;
+}
+.tooltip:hover {
+    text-decoration: underline;
+}
+.tooltip:hover .tooltip-box {
+    display: inline-block;
+    transition: deley 2s ease-in-out, display 2s ease-in-out;
+}
+.tooltip-box {
+    display: none;
+    position: absolute;
+    background: black;
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    padding: 0.3em 0.6em;
+    border-radius: 1em;
+    left: 30px;
+    right: 30px;
+    bottom: 22px;
+    border: 1px solid #fffa;
+
+}
+.tooltip-box::after {
+    content: "";
+    display: block;
+    border-top: 15px solid black;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    left: calc(50% + 30px);
+}

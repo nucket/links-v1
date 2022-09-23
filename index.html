@@ -24,9 +24,9 @@
     </script>
     <script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
     <script type="text/javascript">
-        hotkeys('shift+w,shift+l,shift+t,shift+g', function (event, handler){
+        hotkeys('shift+n,shift+l,shift+t,shift+g', function (event, handler){
         switch (handler.key) {
-            case 'shift+w': window.location.href = 'https://www.naudycastellanos.com' ;
+            case 'shift+n': window.location.href = 'https://www.naudycastellanos.com' ;
             break;
             case 'shift+l': window.location.href = 'http://linkedin.com/in/naudycastellanos/' ;
             break;
@@ -52,27 +52,31 @@
         <div id="sky"></div>
         <ul id="btn" onclick="audio.play();">
             <li>
-                <a href="https://www.naudycastellanos.com/" target="_blank">
+                <a class="tooltip" href="https://www.naudycastellanos.com/" target="_blank">
                     <img src="./Asset/footprint.png" width="20" alt="Logo Website">
-                    Website
+                    <strong>Website</strong>
+                    <span class="tooltip-box" >You can also go with the shortcut <b>Shift + N</b></span>
                 </a>
             </li>
             <li>
-                <a href="http://linkedin.com/in/naudycastellanos/">
-                    <img src="./Asset/linkedin.svg" width="20" alt="">
-                    LinkedIn
+                <a class="tooltip" href="http://linkedin.com/in/naudycastellanos/">
+                    <img src="./Asset/linkedin.svg" width="20" alt="logo linkedin">
+                    <b>LinkedIn</b>
+                    <span class="tooltip-box" >You can also go with the shortcut <B>Shift + L</B></span>
                 </a>
             </li>
             <li>
-                <a href="http://twitter.com/nucket">
-                    <img src="./Asset/twitter.svg" width="20" alt="">
-                    Twitter
+                <a class="tooltip" href="http://twitter.com/nucket">
+                    <img src="./Asset/twitter.svg" width="20" alt="logo twitter">
+                    <b>Twitter</b>
+                    <span class="tooltip-box" >You can also go with the shortcut <b>Shift + T</b></span>
                 </a>
             </li>
             <li>
-                <a href="http://github.com/nucket">
-                    <img src="./Asset/github.svg" width="20" alt="">
-                    GitHub
+                <a class="tooltip" href="http://github.com/nucket">
+                    <img src="./Asset/github.svg" width="20" alt="logo github">
+                    <b>GitHub</b>
+                    <span class="tooltip-box" >You can also go with the shortcut <b>Shift + G</b></span>
                 </a>
             </li>
         </ul>
