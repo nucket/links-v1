@@ -1,6 +1,6 @@
 # links-v1 [NaudyCastellanos.com](https://www.naudycastellanos.com)
 
-Visual [![Links thumbnail](./Asset/thumb-min.png]
+Visual [![Links thumbnail](./Asset/thumb-min.png)
 
 ## Project structure
 
@@ -21,9 +21,17 @@ $PROJECT_ROOT
 - JavaScript - A scripting language for web pages
 - Naker.back - Animate Backgrounds
 
+____
+
+## Changes to version 1a
+
+- Added the sounds to the links
+- Added shortcuts to links
+- Added lock to context menu
+- Added a visual of the result to the Readme.md
+
 ___
 
-Inspired by the work of [Crafztdog](https://www.craftz.dog/)
 
 ## License
 
