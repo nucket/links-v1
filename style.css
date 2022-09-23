@@ -108,7 +108,7 @@ a {
 }
 .tooltip:hover .tooltip-box {
     display: inline-block;
-    transition: deley 2s ease-in-out, display 2s ease-in-out;
+    /* transition: deley 2s ease-in-out, display 2s ease-in-out; */
 }
 .tooltip-box {
     display: none;
@@ -125,7 +125,8 @@ a {
     right: 30px;
     bottom: 22px;
     border: 1px solid #fffa;
-
+    opacity: 0.8;
+    transition-delay: 1200ms;
 }
 .tooltip-box::after {
     content: "";
