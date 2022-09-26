@@ -30,7 +30,7 @@ main {
 main.animated {
     opacity: 0;
     filter: blur(10px);
-    transition: opacity 2s ease-in-out, filter 2s ease-in-out;
+    transition: opacity 1s ease-in-out, filter 1s ease-in-out;
 }
 header {
     padding-top: 3em;
@@ -39,7 +39,7 @@ header {
     flex-direction: column;
     align-items: center;
 }
-header > img {
+header > a > img {
     z-index: 600;
     width: 8em;
     height: 8em;
@@ -87,6 +87,7 @@ ul > li > a {
     gap: 0.5em;
 }
 a {
+    z-index: 600;
     color: black;
     font-weight: bold;
     text-decoration: none;

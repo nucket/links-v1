@@ -22,10 +22,12 @@
             return false ;
         }
     </script>
-    <script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
+    <script src="./hotkeys.min.js"></script>
     <script type="text/javascript">
-        hotkeys('shift+n,shift+l,shift+t,shift+g', function (event, handler){
+        hotkeys('shift+ctrl+n,shift+n,shift+l,shift+t,shift+g', function (event, handler){
         switch (handler.key) {
+            case 'shift+ctrl+n': window.location.href = 'https://links2.naudycastellanos.com' ;
+            break;
             case 'shift+n': window.location.href = 'https://www.naudycastellanos.com' ;
             break;
             case 'shift+l': window.location.href = 'http://linkedin.com/in/naudycastellanos/' ;
@@ -46,7 +48,9 @@
 <body>
     <main class="animated">
         <header>
-            <img width="200" height="200" src="./Asset/NaudyCastellanos.jpg" alt="Picture Naudy Castellanos in Computex 2019">
+            <a href="https://links2.naudycastellanos.com/">
+                <img width="200" height="200" src="./Asset/NaudyCastellanos.jpg" alt="Picture Naudy Castellanos in Computex 2019">
+            </a>
             <h1>@nucket</h1>
         </header>
         <div id="sky"></div>
